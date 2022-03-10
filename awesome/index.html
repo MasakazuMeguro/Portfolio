@@ -6,6 +6,7 @@
 ・各記事のテンプレート（記事一覧ではない）
 （未作成）
 ・カテゴリの記事一覧の作成((((途中＜ガジェっと一覧から作成＞)))) -->
+・素材をimagesファイルに移動させ、各コードも変更する。-->
 
 
 <!DOCTYPE html>
@@ -22,7 +23,6 @@
 
   <body>
     <div class="wrapper">
-
 
       <!-- ハンバーガーメニューボタンの配置 -->
       <button type="button" class="menu-btn">
@@ -111,29 +111,3 @@
   </body>
 </html>
 
-
-<!--JavaScriptでメイン画像を切り替えるコード
-　　　フェードと幅の調整ができなかった20220209Wed
-
-html
-<section class="mainvisual">
-<img src="main1.jpg" name="bg">
-<div id="boxtext">Welcome<br>To<br>MEGLOG</div>
-</section>?
-
-<script>
-img = new Array("main1.jpg","main2.jpg","main3.jpg","main4.jpg","main5.jpg");
-count = -1; //*2
-imgTimer();
-
-function imgTimer() {
-  //画像番号
-  count++; //*3
-  //画像の枚数確認
-  if (count == img.length) count = 0; //*4
-  //画像出力
-  document.bg.src = img[count]; //*5
-  //次のタイマー呼びだし
-  setTimeout("imgTimer()",1000); //*6
-}
-</script> -->
