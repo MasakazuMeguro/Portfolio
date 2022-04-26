@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="ここでは趣味・ガジェット・ゴルフ・仮想通貨などを紹介するサイトです。"
+    <link name="topiamege" content="width=device=width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Toppage | MEGLOG</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+
+      <!-- ハンバーガーメニューボタン -->
+      <button type="button" class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <div>MENU</div>
+      </button>
+
+      <div class="menu">
+        <a href="index.html"><div class="menu__item">HOME</div></a>
+        <div class="border"></div>
+        <a href="about.html"><div class="menu__item">ABOUT</div></a>
+        <div class="border"></div>
+        <a href="index.html#titlebar_b" class="menu__close"><div class="menu__item">CATEGORY</div></a>
+        <div class="border"></div>
+        <a href="contact.html"><div class="menu__item">CONTACT</div></a>
+      </div>
+      <!-- ハンバーガーメニューボタン -->
+
+      <header><div class="meglogtop"><a href="index.html">MEGLOG</a></div></header>
+
+      <section class="titlebar"><a>Welcome to MEGLOG</a></section>
+
+      <nav>
+        <a href="index.html"><div class="normal">Home</div><div class="hover">ホームへ戻る</div></a>
+        <a href="about.html"><div class="normal">About</div><div class="hover">MEGLOGについて</div></a>
+        <a href="#titlebar_b"><div class="normal">Category</div><div class="hover">記事カテゴリ</div></a>
+        <a href="contact.html"><div class="normal">Contact</div><div class="hover">管理者へ連絡</div></a>
+      </nav>
+
+      <main>
+        <section id="mainvisual">
+          <div class="bgimg src1"></div>
+          <div class="bgimg src2"></div>
+          <div class="bgimg src3"></div>
+          <div class="bgimg src4"></div>
+          <div class="bgimg src5"></div>
+          <div class="boxtext">Welcome<br>To<br>MEGLOG</div>
+        </section>
+
+        <section id="titlebar_b" class="titlebar"><a>Category</a></section>
+
+        <section id="box">
+          <a href="list_gadget/list_gadget.html"><div class="normal">Gadget</div><div class="hover">ガジェット</div></a>
+          <a href="arti_diy.html"><div class="normal">DIY</div><div class="hover">準備中</div></a>
+          <a href="arti_game.html"><div class="normal">Game</div><div class="hover">準備中</div></a>
+          <a href="arti_crypto.html"><div class="normal">Crypto</div><div class="hover">準備中</div></a>
+          <a href="arti_others.html"><div class="normal">Others</div><div class="hover">準備中</div></a>
+        </section>
+
+        <section class="titlebar"><a>Profile</a></section>
+
+        <!-- googlemap -->
+        <section id="profile">
+          <p>About me...</p>
+          <p>&lt;Location&gt;</p>
+          <p>Hokkaido SapproCity</p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d373591.1591752461!2d140.9677950768135!3d42.98499442721633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ad4755a973633%3A0x33937e9d4687bad5!2z5YyX5rW36YGT5pyt5bmM5biC!5e0!3m2!1sja!2sjp!4v1639461087388!5m2!1sja!2sjp"
+              width="60%"
+              height="350"
+              style="border:100;
+              " allowfullscreen=""
+              loading="lazy">
+            </iframe>
+            <!-- googlemap -->
+
+          </div>
+          <p>&lt;Birth&gt;</p>
+          <p>1993.08.03 Man (28yearsold)</p>
+          <p>&lt;Hobby&gt;</p>
+          <p>Golf/DIY/Interior/Gadget/Game...</p>
+          <p>&lt;Crypto&gt;</p>
+          <p>保有銘柄:BTC/SOL/GMT/APE/NFT...</p>
+        </section>
+      </main>
+
+      <footer id="footer"><p>&copy; 2021 MEGLOG All Rights Reserved.</p></footer>
+
+    </div>
+    <script>
+      document.querySelector('.menu-btn').addEventListener('click', function(){
+      document.querySelector('.menu').classList.toggle('is-active');
+    });
+      document.querySelector('.menu__close').addEventListener('click', function(){
+      document.querySelector('.menu').classList.toggle('is-active');
+    }); //ハンガーガーメニューのカテゴリー押すとメニューが閉じるコード
+    </script>
+  </body>
+</html>
+
+
+<!--JavaScriptでメイン画像を切り替えるコード
+　　　フェードと幅の調整ができなかった20220209Wed
+
+html
+<section class="mainvisual">
+<img src="main1.jpg" name="bg">
+<div id="boxtext">Welcome<br>To<br>MEGLOG</div>
+</section>?
+
+<script>
+img = new Array("main1.jpg","main2.jpg","main3.jpg","main4.jpg","main5.jpg");
+count = -1; //*2
+imgTimer();
+
+function imgTimer() {
+  //画像番号
+  count++; //*3
+  //画像の枚数確認
+  if (count == img.length) count = 0; //*4
+  //画像出力
+  document.bg.src = img[count]; //*5
+  //次のタイマー呼びだし
+  setTimeout("imgTimer()",1000); //*6
+}
+</script> -->

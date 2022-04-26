@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DIY | MEGLOG</title>
+    <link name="topiamege" content="width=device=width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ハンバーガーメニューボタンの配置 -->
+      <button type="button" class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <div>MENU</div>
+      </button>
+
+      <div class="menu">
+        <a href="index.html"><div class="menu__item">HOME</div></a>
+        <div class="border"></div>
+        <a href="about.html"><div class="menu__item">ABOUT</div></a>
+        <div class="border"></div>
+        <a href="index.html#titlebar_b" class="menu__close"><div class="menu__item">CATEGORY</div></a>
+        <div class="border"></div>
+        <a href="contact.html"><div class="menu__item">CONTACT</div></a>
+      </div>
+      <!-- ハンバーガーメニューボタンの配置 -->
+
+      <header><div class="meglogtop"><a href="index.html">MEGLOG</a></div></header>
+
+      <section class="titlebar">
+        <a>Do It Yourself</a>
+      </section>
+
+      <nav>
+        <a href="index.html"><div class="normal">Home</div><div class="hover">ホームへ戻る</div></a>
+        <a href="about.html"><div class="normal">About</div><div class="hover">MEGLOGについて</div></a>
+        <a href="index.html#titlebar_b"><div class="normal">Category</div><div class="hover">記事カテゴリ</div></a>
+        <a href="contact.html"><div class="normal">Contact</div><div class="hover">管理者へ連絡</div></a>
+      </nav>
+
+      <article class="contents">
+        <h1>DIY(日曜大工)について</h1>
+
+        <hr>
+
+        <p>ここでは○○○について紹介していきます。</p>
+
+        <p>○○○で悩んでいる方や△△△な方に向けた記事となっています。</p>
+
+      </article>
+
+        <footer id="footer">
+          <p>&copy; 2021 MEGLOG</p>
+        </footer>
+
+        <script>
+          document.querySelector('.menu-btn').addEventListener('click', function(){
+          document.querySelector('.menu').classList.toggle('is-active');
+        });
+          document.querySelector('.menu__close').addEventListener('click', function(){
+          document.querySelector('.menu').classList.toggle('is-active');
+        });
+        </script>
+      </div>
+  </body>
+</html>

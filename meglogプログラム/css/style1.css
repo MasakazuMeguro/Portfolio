@@ -1,0 +1,403 @@
+/* index.htmlのためのCSS */
+
+@charset "UTF-8";
+
+html {
+  font:62.5%/1.4 "Yu Gothic",游ゴシック,YuGothic,游ゴシック体,Meiryo,メイリオ,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",sans-serif;
+  background: white;
+}
+
+/* 下記レスポンシブデザインのためのCSSコード */
+/* スマートフォンなど向けのサイズ */
+@media screen and (max-width:548px){
+
+  nav>a {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+
+
+  /*----------------------------
+  * メニュー開閉ボタン
+  *----------------------------*/
+.menu-btn {
+    position: fixed;
+    top: 17px;
+    right: 17px;
+    z-index: 14;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    box-sizing: border-box;
+    padding:6px 10px;
+  }
+
+.menu-btn div {
+  font-size: 1.1rem;
+  font-weight: bold;
+  }
+
+  /*----------------------------
+  * メニュー本体
+  *----------------------------*/
+  .menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 13;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #222222;
+    font-size: 3rem;
+    /* border:5px solid white; */
+  }
+
+  .menu__item{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  .menu__item:hover {
+    color: #999999;
+  }
+
+  .border {
+    border:1px solid white;
+    width: 250px;
+  }
+
+
+  /*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+
+  /* アニメーション前のメニューの状態 */
+  .menu{
+    transform: translateX(100vw);
+    transition: all .3s linear;
+  }
+  /* アニメーション後のメニューの状態 */
+  .menu.is-active{
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width:549px) and (max-width:840px) {
+
+  .titlebar {
+    margin: 0 auto;
+  }
+
+  nav>a {
+    width:100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .menu-btn, .menu {
+    display: none;
+  }
+
+
+
+  /* navのためのCSS---------------------------------------- */
+
+  nav {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
+
+  nav a {
+    background:#333;
+    color:white;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav a:nth-child(-n+3) {
+    border-right: 2px solid #a0a0a0;
+  }
+
+  nav a:hover {
+    background:#808080;
+    transition-duration: 0.3s;
+  }
+
+}
+
+/* PC向けのサイズ ------------------------------------------*/
+@media screen and (min-width:841px) {
+
+  body {
+    max-width: 1400px;
+    margin:0 auto;
+  }
+
+  nav>a {
+    width:25%;
+  }
+
+  .menu-btn, .menu {
+    display: none;
+  }
+
+  /* navのためのCSS---------------------------------------- */
+
+  nav {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
+
+  nav a {
+    background:#333;
+    color:white;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav a:nth-child(-n+3) {
+    border-right: 2px solid #a0a0a0;
+  }
+
+  nav a:hover {
+    background:#808080;
+    transition-duration: 0.3s;
+  }
+}
+/* 上記までレスポンシブデザインのためのCSSコード */
+
+.wrapper {
+  background: #c0c0c0;
+  width: 100%;
+}
+
+header {
+  background: linear-gradient(to right, #7a7a7a, #c0c0c0, #c0c0c0);
+  margin-bottom:0.2rem;
+}
+
+.meglogtop {
+  font-size: 4rem;
+  font-weight: bolder;
+  padding-left: 1rem;
+  color:white;
+}
+
+.titlebar {
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #000000;
+  color:#ffffff;
+  margin-bottom: 0.2rem;
+}
+
+.titlebar a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+
+/* CATEGORYのためのCSSコード------------------------------- */
+
+#box{
+  width: 100%;
+  display:flex;
+  margin:0 auto;
+}
+
+#box a {
+  width:20%;
+  height: 8rem;
+  line-height: 8rem;
+  border:1px solid white;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size:2rem;
+  font-weight: bold;
+  background: gray;
+}
+
+#box>a:nth-child(1):hover {
+  background: #7b68ee;
+}
+
+#box>a:nth-child(2):hover {
+  background:#bdb760;
+}
+#box>a:nth-child(3):hover {
+  background:#f4a460;
+}
+#box>a:nth-child(4):hover{
+  background: #3cb371;
+}
+#box>a:nth-child(5):hover {
+  background: #87ceeb;
+}
+
+#box>a:hover {
+  animation-name: fade;
+  animation-duration: 0.8s;
+  transition-duration: 0.5s;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* hover共通CSSコード（英⇨日本語）------------------------------ */
+
+a .hover {
+  display: none;
+  font-size: 1.8rem;
+  word-wrap: break-word;
+}
+
+a:hover .normal {
+  display: none;
+}
+
+a:hover .hover {
+  display: inline;
+}
+
+
+/* Profile-------------------------------------------------- */
+
+#profile {
+  border: 5px solid gray;
+  box-sizing: border-box;
+  margin-bottom: 0.2rem;
+  /* background: #7a7a7a; */
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.map {
+  max-width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+/* footer-------------------------------------------------- */
+
+footer {
+  height: 13rem;
+  text-align: center;
+  background-color: #333;
+  padding-top: 1rem;
+  color:#FFFFFF;
+}
+
+
+
+
+/* TOPbackgroundアニメーション用CSS--------------------------- */
+
+#mainvisual {
+  position: relative;
+  max-width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom:0.2rem;
+}
+
+#mainvisual .bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  animation: bgAnime 25s infinite;   /* 5画像 × 各5s = 20s */
+  background: center no-repeat;
+  background-size: cover;
+}
+
+#mainvisual .src1 {
+  background-image : url(../images/main1.jpg);   /* 背景の画像を指定 */
+}
+#mainvisual .src2 {
+  background-image : url(../images/main2.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 5s;
+}
+#mainvisual .src3 {
+  background-image : url(../images/main3.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 10s;
+}
+#mainvisual .src4 {
+  background-image : url(../images/main4.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 15s;
+}
+#mainvisual .src5 {
+  background-image : url(../images/main5.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 20s;
+}
+
+@keyframes bgAnime {
+    0% { opacity: 0; }
+   5% { opacity: 1; }
+   20% { opacity: 1; }
+   30% { opacity: 0; }
+   100% { opacity: 0; }
+}
+
+#mainvisual .boxtext{
+  position   : absolute;
+  display    : inline-block;
+  width: 35%;
+  padding    : 150px;
+  background : #000000;
+  opacity: 0.7;
+  font-size  : 4rem;
+  font-weight: bold;
+  text-align: center;
+  color      : #fff;
+  top        : 50%;
+  left       : 50%;
+  transform  : translate(-50%,-50%);
+  z-index    : 11;
+}

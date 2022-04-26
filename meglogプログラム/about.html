@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About | MEGLOG</title>
+    <link name="topiamege" content="width=device=width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+  </head>
+  <body>
+
+    <!-- ハンバーガーメニューボタン -->
+    <button type="button" class="menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <div>MENU</div>
+    </button>
+
+    <div class="menu">
+      <a href="index.html"><div class="menu__item">HOME</div></a>
+      <div class="border"></div>
+      <a href="about.html"><div class="menu__item">ABOUT</div></a>
+      <div class="border"></div>
+      <a href="index.html#titlebar_b" class="menu__close"><div class="menu__item">CATEGORY</div></a>
+      <div class="border"></div>
+      <a href="contact.html"><div class="menu__item">CONTACT</div></a>
+    </div>
+    <!-- ハンバーガーメニューボタン -->
+
+    <header><div class="meglogtop"><a href="index.html">MEGLOG</a></div></header>
+
+    <div class="wrapper">
+      <section class="titlebar"><a>About MEGLOG</a></section>
+
+      <nav>
+        <a href="index.html"><div class="normal">Home</div><div class="hover">ホームへ戻る</div></a>
+        <a href="about.html"><div class="normal">About</div><div class="hover">MEGLOGについて</div></a>
+        <a href="index.html#titlebar_b"><div class="normal">Category</div><div class="hover">記事カテゴリ</div></a>
+        <a href="contact.html"><div class="normal">Contact</div><div class="hover">管理者へ連絡</div></a>
+      </nav>
+
+      <section class="contents">
+      <h1>MEGLOGについて</h1>
+      <hr>
+        <p>当サイトではアラサー男子の趣味やガジェットを紹介するサイトです。</p>
+        <p>記事では主に以下の物・コトを取り扱っております。</p>
+      <ul>
+        <li>ガジェット(PC周辺機器)</li>
+        <li>DIY</li>
+        <li>仮想通貨</li>
+        <li>GAME</li>
+        <li>雑記(ゴルフやカテゴライズしていない分野)</li>
+      </ul>
+        <p>私の所有している物や役立つアイテムなどの記事を作っていきます。</p>
+        <p>よろしければ記事も覗いてみてください。</p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <!-- ↑MARGINかPADDINGで調整する -->
+      </section>
+
+
+      <footer id="footer">
+        <p>&copy; 2021 MEGLOG All Rights Reserved.</p>
+      </footer>
+
+      <script>
+
+        document.querySelector('.menu-btn').addEventListener('click', function(){
+        document.querySelector('.menu').classList.toggle('is-active');
+      });
+        document.querySelector('.menu__close').addEventListener('click', function(){
+        document.querySelector('.menu').classList.toggle('is-active');
+      });
+
+      </script>
+    </div>
+  </body>
+</html>
